@@ -8,6 +8,7 @@ Enter the directory where the code was cloned and create a virtual environment:
 
 cd project_directory
 
+
 python -m venv venv
 
 Activate the virtual environment:

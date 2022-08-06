@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
+
 {% load static %}
+
 {% block title %} Welcome home {% endblock title %}
 
 
 {% block content %}
+{% include 'header.html' %}
+
 <h1>This is our home page.</h1>
 {% if user.is_authenticated %}
   <p>Hi {{ user.username }}!</p>
@@ -13,6 +17,7 @@
   <a href="{% url 'login' %}">Log In</a>
 
 {% endif %}
+
     {% include 'foot.html' %}
 {% endblock content %}
 
